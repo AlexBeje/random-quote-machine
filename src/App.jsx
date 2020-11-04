@@ -2,7 +2,7 @@ import "./App.scss";
 import React, { useEffect, useState } from "react";
 import Quote from "./Quote/Quote";
 
-function App() {
+export default function App() {
   const [quotes, setQuotes] = useState([]);
   const [quote, setQuote] = useState({
     text: "",
@@ -33,13 +33,8 @@ function App() {
   }, []);
 
   return (
-    <div className="App container-fluid d-flex justify-content-center align-content-center vh-100">
-      <Quote
-        quote={quote}
-        randomNumberHandler={randomNumberHandler}
-      />
+    <div className="App container-fluid d-flex justify-content-center align-content-center vh-100 bg-primary">
+      <Quote quote={quote} randomNumberHandler={randomNumberHandler} />
     </div>
   );
 }
-
-export default App;

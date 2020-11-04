@@ -1,7 +1,31 @@
+@import "../custom.scss";
+
 .quote {
-    width: 60%;
-    height: 30%;
-    background-color: #2b2d42;
-    border-radius: 4px;
-    color: white;
+  background-color: $secondary;
+  border-radius: 8px;
+  box-shadow: 2px 2px 6px $secondary;
+  color: $primary;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__text {
+    font-size: 1.5rem;
+    font-weight: 900;
+  }
+  
+  &__author {
+    text-align: right;
+  }
+  
+  &__button {
+    font-weight: 700;
+    margin: 1em auto 0 auto;
+    width: 10em;
+  }
+
+  @media (min-width: 768px) {
+    min-height: 30%;
+    width: 40%;
+  }
 }
