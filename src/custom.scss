@@ -1,11 +1,5 @@
 // Override default variables before the import
-$primary: #EDF2F4;
-$secondary: #2B2D42;
-$tertiary: #D90429;
+$primary: #17c6fe;
 
 // Import Bootstrap and its default variables
-@import '~bootstrap/scss/bootstrap.scss';
-
-.btn-tertiary {
-    @include button-variant($tertiary, darken($tertiary, 7.5%), darken($tertiary, 10%), lighten($tertiary,5%), lighten($tertiary, 10%), darken($tertiary,30%));
-}
+@import "~bootstrap/scss/bootstrap.scss";

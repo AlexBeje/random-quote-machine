@@ -1,31 +1,31 @@
 @import "../custom.scss";
 
 .quote {
-  background-color: $secondary;
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
   border-radius: 8px;
-  box-shadow: 2px 2px 6px $secondary;
-  color: $primary;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  box-shadow: 2px 2px 6px var(--color-secondary);
 
   &__text {
     font-size: 1.5rem;
     font-weight: 900;
   }
-  
+
   &__author {
     text-align: right;
   }
-  
-  &__button {
-    font-weight: 700;
-    margin: 1em auto 0 auto;
-    width: 10em;
-  }
 
-  @media (min-width: 768px) {
-    min-height: 30%;
-    width: 40%;
+  &__button {
+    background-color: var(--color-adjcent);
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+    font-weight: 700;
+    width: 10em;
+    transition: background-color 0.2s;
+    &:hover {
+      color: var(--color-primary);
+      background-color: var(--color-secondary);
+    }
   }
 }

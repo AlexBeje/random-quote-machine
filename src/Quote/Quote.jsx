@@ -6,14 +6,14 @@ export default function Quote({
   randomNumberHandler,
 }) {
   return (
-    <div className="quote m-auto p-5">
+    <div className="quote m-auto p-5 flex flex-col justify-between">
       <div className="quote__share"></div>
       <div className="quote__text">{newlyDefinedText}</div>
       {newlyDefinedAuthor && (
-        <div className="quote__author">-{newlyDefinedAuthor}</div>
+        <div className="quote__author mt-3">-{newlyDefinedAuthor}</div>
       )}
       <button
-        className="quote__button btn btn-tertiary"
+        className="quote__button mt-3 ml-auto mr-auto"
         onClick={randomNumberHandler}
       >
         New quote

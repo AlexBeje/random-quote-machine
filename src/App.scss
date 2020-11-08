@@ -1,4 +1,15 @@
 .app {
-    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
-    font-family: 'Raleway', sans-serif;
+  @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap");
+  font-family: "Raleway", sans-serif;
+  background-color: var(--color-secondary);
+  a {
+    &__author {
+      color: var(--color-adjcent);
+    }
+    color: var(--color-primary);
+    &:hover {
+      text-decoration: none;
+      color: var(--color-adjcent);
+    }
+  }
 }
