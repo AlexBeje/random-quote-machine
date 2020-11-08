@@ -30,6 +30,7 @@ export default function App() {
 
   useEffect(() => {
     randomNumberHandler();
+    // eslint-disable-next-line
   }, [quotes]);
 
   useEffect(() => {
@@ -49,7 +50,7 @@ export default function App() {
             <a href="https://github.com/AlexBeje/random-quote-machine">
               <AiFillGithub className="mr-2" />
             </a>
-            <a href="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F1lLwlLr8TfMnZtU2nYM4P1%2Fvirtual-piano%3Fnode-id%3D0%253A1">
+            <a href="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FD69IGPdHwsJL651DnBEVeR%2Frandom-quote-machine%3Fnode-id%3D0%253A1">
               <FiFigma />
             </a>
           </div>
