@@ -50,7 +50,7 @@ export default function App() {
               <AiFillGithub className="mr-2" />
             </a>
             <a href="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F1lLwlLr8TfMnZtU2nYM4P1%2Fvirtual-piano%3Fnode-id%3D0%253A1">
-              <FiFigma className="" />
+              <FiFigma />
             </a>
           </div>
           <a href="https://www.alexbejenaru.dev">
