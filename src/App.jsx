@@ -43,7 +43,7 @@ export default function App() {
 
   return (
     <div className="app flex flex-col h-screen">
-      <div className="m-auto w-8/12 lg:w-6/12">
+      <div className="m-auto w-10/12 lg:w-6/12">
         <Quote quote={quote} randomNumberHandler={randomNumberHandler} />
         <div className="flex justify-between mt-4">
           <div className="flex items-center">
