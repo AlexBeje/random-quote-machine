@@ -6,7 +6,7 @@ export default function Quote({
   randomNumberHandler,
 }) {
   return (
-    <div className="quote m-auto p-5 flex flex-col justify-between">
+    <div className="quote m-auto p-2 lg:p-5 flex flex-col justify-between">
       <div className="quote__share"></div>
       <div className="quote__text">{newlyDefinedText}</div>
       {newlyDefinedAuthor && (
@@ -16,7 +16,7 @@ export default function Quote({
         className="quote__button mt-3 ml-auto mr-auto"
         onClick={randomNumberHandler}
       >
-        New quote
+        New
       </button>
     </div>
   );
